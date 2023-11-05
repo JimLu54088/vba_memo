@@ -1,0 +1,12 @@
+Sub Add_Double_quotation()
+    
+    Dim ws          As Worksheet
+    Dim cell        As Range
+    
+    Set ws = ThisWorkbook.Sheets(1)
+    For Each cell In ws.UsedRange
+        
+        cell.Value = """" & cell.Value & """"
+    Next cell
+    
+End Sub
